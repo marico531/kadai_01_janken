@@ -17,13 +17,13 @@
 
     <main>
        <div>あなたの出す手は？</div>
-        <button id="gu_btn">
+        <button id="button_gu_btn">
             <img src="img/jagu.png" width="100" alt="gu">
         </button>
-        <button id="cho_btn">
+        <button id="button_cho_btn">
             <img src="img/jacyoki.png" width="100" alt="cyoki">
         </button>
-        <button id="par_btn">
+        <button id="button_par_btn">
             <img src="img/japa.png" width="100" alt="pa">
         </button>
         <div>コンピュータの出した手は？</div>
@@ -40,7 +40,7 @@
 
     <script> 
 // ＜ボタングー＞
-   $("#gu_btn").on("click",function(){
+   $("#button_gu_btn").on("click",function(){
 // pc_hands
 //１−１.乱数（１ー３）
 const r = Math.ceil( Math.random()*3 );
@@ -72,7 +72,7 @@ if (r==3){
 
   
 // ２. ボタンチョキ
-$("#cho_btn").on("click",function(){
+$("#button_cho_btn").on("click",function(){
 
 //２ー1　乱数（１ー３）
 const r = Math.ceil( Math.random()*3 );
@@ -97,7 +97,7 @@ if (r==3){
 });
 
 // ３. ボタンパー
-$("#par_btn").on("click",function(){
+$("#button_par_btn").on("click",function(){
 //３ー1　乱数（１ー３）
 const r = Math.ceil( Math.random()*3 );
 //３−２.if分岐処理
