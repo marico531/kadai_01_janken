@@ -62,9 +62,18 @@ button{
     background-color: white;
 }
 
-button:hover{
+#button_gu_btn:hover{
     background: #0066CC;
-    color:#fff;
+    transform: translateY(-7px);   
+}
+
+#button_cho_btn:hover{
+    background: whitesmoke;
+    transform: translateY(-7px);   
+}
+
+#button_par_btn:hover{
+    background: red;
     transform: translateY(-7px);   
 }
 
