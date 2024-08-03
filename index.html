@@ -36,7 +36,9 @@
 
     </main>
 
-    <footer> </footer>
+    <footer> 
+        <div id="resetbtn" class="sai-btn">再チャレンジ</button></div>
+    </footer>
 
     <script> 
 // ＜ボタングー＞
@@ -52,20 +54,22 @@ let view ="";
 if (r==1){
     view= '<img src= "img/jagu.png" width="200" >';
     view2='<img src= "img/draw.png" width="200" >';
+    $("#resetbtn").css("visibility","visible"); 
 }
 
 if (r==2){
     view= '<img src= "img/japa.png" width="200" >';
     view2= '<img src= "img/lose.png" width="200" >';
+    $("#resetbtn").css("visibility","visible"); 
 }
 if (r==3){
     view= '<img src= "img/jacyoki.png" width="200" >';
     view2= '<img src= "img/win.png" width="200" >';
+    $("#resetbtn").css("visibility","visible"); 
 }
 //１ー３．表示処理
   $("#pc_hands").html(view);
   $("#judgment").html(view2);
-
 
 });
   
@@ -80,14 +84,18 @@ let view ="";
 if (r==1){
     view= '<img src= "img/jagu.png" width="200" >';
     view2= '<img src= "img/lose.png" width="200" >';
+    $("#resetbtn").css("visibility","visible"); 
 }
+
 if (r==2){
     view= '<img src= "img/japa.png" width="200" >';
     view2= '<img src= "img/win.png" width="200" >';
+    $("#resetbtn").css("visibility","visible"); 
 }
 if (r==3){
     view= '<img src= "img/jacyoki.png" width="200">';
     view2= '<img src= "img/draw.png" width="200" >';
+    $("#resetbtn").css("visibility","visible"); 
 }
 //２ー３。表示処理
   $("#pc_hands").html(view);
@@ -103,20 +111,28 @@ let view ="";
 if (r==1){
     view= '<img src= "img/jagu.png" width="200" >';
     view2= '<img src= "img/win.png" width="200" >';
+    $("#resetbtn").css("visibility","visible"); 
 }
 if (r==2){
     view= '<img src= "img/japa.png" width="200" >';
     view2= '<img src= "img/draw.png" width="200" >';
+    $("#resetbtn").css("visibility","visible"); 
 }
 if (r==3){
     view= '<img src= "img/jacyoki.png" width="200"　>';
     view2= '<img src= "img/lose.png" width="200" >';
+    $("#resetbtn").css("visibility","visible"); 
 }
 //３ー３.表示処理
   $("#pc_hands").html(view);
   $("#judgment").html(view2);
 });
    
+//リセットボタン押したら、初期画面に戻る
+    $("#resetbtn").on("click",function(){
+        $(window).prop("location", location.href);
+    });
+
     </script>
 
 </body>
